@@ -1,0 +1,94 @@
+import { ColumnFilter } from "./ColumnFIlter";
+
+export const COLUMNS = [
+  {
+    Header: "Id",
+    Footer: "Id",
+    accessor: "id",
+    disableFilters: true,
+  },
+
+  {
+    Header: "First Name",
+    Footer: "First Name",
+    accessor: "first_name",
+  },
+
+  {
+    Header: "Last Name",
+    Footer: "Last Name",
+    accessor: "last_name",
+  },
+
+  {
+    Header: "Date of Birth",
+    Footer: "Date of Birth",
+    accessor: "date-of-birth",
+  },
+
+  {
+    Header: "Country",
+    Footer: "Country",
+    accessor: "country",
+  },
+
+  {
+    Header: "Email",
+    Footer: "Email",
+    accessor: "email",
+  },
+  {
+    Header: "Age",
+    Footer: "Age",
+    accessor: "age",
+  },
+];
+
+export const Grouped_Columns = [
+  {
+    Header: "Id",
+    Footer: "Id",
+    accessor: "id",
+  },
+  {
+    Header: "Name",
+    Footer: "Name",
+    columns: [
+      {
+        Header: "First Name",
+        Footer: "First Name",
+        accessor: "first_name",
+      },
+
+      {
+        Header: "Last Name",
+        Footer: "Last Name",
+        accessor: "last_name",
+      },
+    ],
+  },
+
+  {
+    Header: "Info",
+    Footer: "Info",
+    columns: [
+      {
+        Header: "Date of Birth",
+        Footer: "Date of Birth",
+        accessor: "date-of-birth",
+      },
+
+      {
+        Header: "Country",
+        Footer: "Country",
+        accessor: "country",
+      },
+
+      {
+        Header: "Phone",
+        Footer: "Phone",
+        accessor: "phone",
+      },
+    ],
+  },
+];
